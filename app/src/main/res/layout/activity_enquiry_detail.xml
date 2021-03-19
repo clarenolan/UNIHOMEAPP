@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Landlord.EnquiryDetail"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="top"
+        android:id="@+id/linearLayout3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:background="@color/white"
+        android:outlineAmbientShadowColor="@color/black"
+        android:elevation="12dp"
+        app:pressedTranslationZ="12dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property Enquiry"
+        android:textSize="22sp"
+        android:clickable="false"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:hint="Email Address"
+        android:visibility="invisible"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:id="@+id/etSubject2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:clickable="false"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/etMessage2"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:height="150dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Name"
+        android:clickable="false"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/tvSEmail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Email"
+        android:clickable="false"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/tvSNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Number"
+        android:clickable="false"
+        android:textSize="14sp"
+        />
+    </LinearLayout>
+
+</LinearLayout>

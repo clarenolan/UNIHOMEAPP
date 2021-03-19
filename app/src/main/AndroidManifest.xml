@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unihomeapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UNIHOMEAPP">
+        <activity android:name=".Student.PastEnquiries"></activity>
+        <activity
+            android:name=".Student.StudentProfile"
+            android:label="@string/title_activity_student_profile"></activity>
+        <activity android:name=".Landlord.EnquiryDetail" />
+        <activity android:name=".Landlord.Enquiries" />
+        <activity
+            android:name=".toolbar"
+            android:label="@string/title_activity_toolbar"
+            android:theme="@style/Theme.UNIHOMEAPP.NoActionBar" />
+        <activity android:name=".Landlord.LoadProperties" />
+        <activity android:name=".EditorActivity" />
+        <activity android:name=".Student.PropertyInfo" />
+        <activity
+            android:name=".Student.StudentNav"
+            android:label="@string/title_activity_student_nav" />
+        <activity android:name=".Student.StudentBrowse" />
+        <activity android:name=".Student.StudentLogin" />
+        <activity android:name=".Landlord.UserProfile" />
+        <activity
+            android:name=".UserWelcome"
+            android:label="@string/title_activity_user_welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Landlord.LandlordHome" />
+        <activity android:name=".Landlord.SignUp" />
+        <activity android:name=".Landlord.LandlordLogin" />
+        <activity
+            android:name=".Landlord.UpdateProperty"
+            android:label="@string/title_activity_update_property"
+            android:theme="@style/Theme.UNIHOMEAPP.NoActionBar" />
+        <activity android:name=".Landlord.UploadProperty" />
+        <activity android:name=".Landlord.PropertyDetail" />
+        <activity
+            android:name=".Student.StudentSignUp"
+            android:label="StudentSignUp" />
+        <activity android:name=".Landlord.MainActivity" />
+    </application>
+
+</manifest>

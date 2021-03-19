@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Landlord.UpdateProperty">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id = "@+id/text"
+            android:textSize = "30sp"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:gravity="center"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/ivPropImage"
+            android:src="@drawable/image"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Select Image"
+            android:textSize="22sp"
+            android:backgroundTint="@color/black"
+            android:onClick="btnSelectImage"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Property Name"
+            android:textSize="19sp"
+            android:id="@+id/txt_PropName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:id="@+id/txt_Description"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:id="@+id/txt_Address"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent Per Week"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/text_price"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Number of Bedrooms"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/spTotalBeds">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of available bedrooms"
+            android:layout_marginBottom="10dp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/spAvBeds">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Bathrooms"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/spBathrooms">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rental Period"
+            android:layout_marginBottom="10dp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/spPeriod">
+        </Spinner>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bills Included"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Wifi"
+            />
+
+
+        <CheckBox
+            android:id="@+id/bins"
+            android:layout_width="151dp"
+            android:layout_height="36dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Bin Collection" />
+
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/electricity"
+            android:text="Electricity"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+        <CheckBox
+            android:id="@+id/heating"
+            android:layout_width="823dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Heating" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amenities"
+            android:layout_marginBottom="10dp"
+            />
+
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/washing"
+            android:text="Washing Machine"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dryer"
+            android:text="Dryer"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/parking"
+            android:text="Parking"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dish"
+            android:text="Dish Washer"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="TV Room"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <CheckBox
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/kitchen"
+            android:text="Communal Kitchen"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Update Property"
+            android:textSize="22sp"
+            android:backgroundTint="@color/black"
+            android:id="@+id/btnUpdateProperty"
+            android:onClick="btnUpdateProperty"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
